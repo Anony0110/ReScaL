@@ -4,7 +4,7 @@ This repository contains the data and code for the following paper:
 > Augmenting Scaling Laws with Residual Learning for LLM Pretraining Performance Prediction
 
 ## Abstract
-> The computational cost of pretraining Large Language Models (LLMs) at modern scales makes it essential to predict pretraining outcomes (validation loss on held-out data) before committing to expensive full-scale pretraining. Scaling laws enable extrapolation from small-scale pilots but miss feature-dependent variations, while purely data-driven methods require substantial training data and extrapolate unreliably beyond observed regimes. To address this dual limitation, we propose \methodname{} (\underline{Re}sidual-augmented \underline{Sca}ling \underline{L}aws), a hybrid method that partially fits and ensembles multiple scaling laws on minimal pilot runs; learns ML-predicted residual corrections to capture feature-dependent variations that scaling laws miss; and dynamically combines scaling-law extrapolation with residual corrections to leverage the strengths of both approaches. Through experiments on 52 pairs of pretraining datasets and budget sizes, we show that \methodname{} is ranked~1st in 42/52 cases (81\%) with the best average rank of 1.21, and attains up to 5.7$\times$ lower MAPE than the strongest counterpart. Ablations show that removing each design can degrade accuracy by up to 4.3$\times$, while sensitivity analysis confirms our hyperparameter choice as a robust operating point.
+> The computational cost of pretraining Large Language Models (LLMs) at modern scales makes it essential to predict pretraining outcomes (validation loss on held-out data) before committing to expensive full-scale pretraining. Scaling laws enable extrapolation from small-scale pilots but miss feature-dependent variations, while purely data-driven methods require substantial training data and extrapolate unreliably beyond observed regimes. To address this dual limitation, we propose ReScaL (Residual-augmented Scaling Laws), a hybrid method that partially fits and ensembles multiple scaling laws on minimal pilot runs; learns ML-predicted residual corrections to capture feature-dependent variations that scaling laws miss; and dynamically combines scaling-law extrapolation with residual corrections to leverage the strengths of both approaches. Through experiments on 52 pairs of pretraining datasets and budget sizes, we show that ReScaL is ranked 1st in 42/52 cases (81\%) with the best average rank of 1.21, and attains up to 5.7× lower MAPE than the strongest counterpart. Ablations show that removing each design can degrade accuracy by up to 4.3×, while sensitivity analysis confirms our hyperparameter choice as a robust operating point.
 
 
 This repository contains the **key codes**, **full data used**, and the **raw experiment results** for the paper.
@@ -195,6 +195,7 @@ We compare **ReScaL** against a diverse set of representative **baseline scaling
 ### 5. Data Mixing Law
 
 **Reference:** [https://arxiv.org/abs/2403.16952](https://arxiv.org/abs/2403.16952)
+
 
 
 
