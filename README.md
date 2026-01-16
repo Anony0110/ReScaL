@@ -172,38 +172,31 @@ We compare **ReScaL** against a diverse set of representative **baseline scaling
 
 **Reference:** [https://arxiv.org/abs/2506.10972](https://arxiv.org/abs/2506.10972)
 
-FARSEER models training loss as a function of both **model scale and training configuration**, emphasizing flexible functional forms and improved extrapolation behavior under limited data regimes. It serves as a recent strong baseline for performance prediction.
 
 
 ### 2. Chinchilla Scaling Law
 
 **Reference:** [https://arxiv.org/abs/2203.15556](https://arxiv.org/abs/2203.15556)
 
-The Chinchilla scaling law revises compute-optimal training prescriptions by jointly considering **model size and dataset size**, demonstrating that many prior models were significantly under-trained. This law is widely adopted as a standard baseline in modern LLM scaling studies.
 
 
 ### 3. Kaplan Scaling Law
 
 **Reference:** [https://arxiv.org/abs/2001.08361](https://arxiv.org/abs/2001.08361)
 
-The Kaplan scaling law is an early and influential formulation that models loss as a power-law function of **model parameters, dataset size, and compute**. Despite its simplicity, it remains a canonical baseline in scaling law research.
 
 
 ### 4. Data-Constrained Scaling Law
 
 **Reference:** [https://arxiv.org/abs/2305.16264](https://arxiv.org/abs/2305.16264)
 
-This line of work focuses on scaling behavior under **fixed or limited data budgets**, explicitly modeling how optimal training strategies and performance trends change when data availability becomes the primary constraint.
 
 
 ### 5. Data Mixing Law
 
 **Reference:** [https://arxiv.org/abs/2403.16952](https://arxiv.org/abs/2403.16952)
 
-Data mixing laws extend classical scaling laws by incorporating **data composition and mixture ratios** as first-class variables, modeling how different data sources jointly affect training loss. These laws are particularly relevant for heterogeneous pretraining corpora.
 
-
-**Note.** All baseline models are implemented and evaluated under the same experimental protocol as ReScaL to ensure a fair comparison.
 
 
 
